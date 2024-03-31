@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import "./ToolsDisplay.css"
 import { PhaseContext } from '../../context/PhaseContext';
+import { tools_list } from '../../assets/assets';
 
 const ToolsDisplay = ({phase}) => {
 

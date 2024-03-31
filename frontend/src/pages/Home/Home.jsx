@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Phase phase={phase} setPhase={setPhase}/>
-      
+     
     </div>
   )
 }
