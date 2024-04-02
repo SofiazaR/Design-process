@@ -9,9 +9,9 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <ul className="navbar-menu">
-        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</li>
-        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</li>
-        <li onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>contact us</li>
+        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>главная</li>
+        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>чат</li>
+        <li onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>о сайте</li>
         </ul>
         
         <div className="navbar-right">
@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="navbar-search-icon">
                 <img src={assets.favorite_icon} alt="" className='favorite' />
             </div>
-            <button>sign in</button>
+            <button>войти</button>
         </div>
     </div>
   )
