@@ -23,11 +23,11 @@ const Understand = () => {
                       </div>
                       <div className="cards">
                           <div className="card">
-                              <p>Text</p>
+                              <p>Опиши портрет пользователя</p>
                               <img src={assets.compass_icon} alt="" />
                           </div>
                           <div className="card">
-                              <p>Text</p>
+                              <p>Что такое A/B тестирование</p>
                               <img src={assets.bulb_icon} alt="" />
                           </div>
                           <div className="card">
