@@ -18,8 +18,8 @@ const Understand = () => {
               {!showResult
                   ? <>
                       <div className="greet">
-                          <p><span>Hello, ?</span></p>
-                          <p>How can I help you today?</p>
+                          <p><span>Привет</span></p>
+                          <p>Как я могу помочь тебе сегодня</p>
                       </div>
                       <div className="cards">
                           <div className="card">
