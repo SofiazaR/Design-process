@@ -39,7 +39,7 @@ const ContextProvider = (props) => {
             response = await runChat(input)
         }
         let responceArray = response.split("**");
-        let newResponse;
+        let newResponse = "";
         for (let i = 0; i < responceArray.length; i++) {
             if (i === 0 || i % 2 !== 1) {
                 newResponse += responceArray[i];

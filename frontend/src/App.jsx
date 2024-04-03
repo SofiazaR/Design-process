@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import Favorite from './pages/Favorite/Favorite'
 import Search from './pages/Search/Search'
 import Footer from './components/Footer/Footer'
+import Chat from './pages/Chat/Chat'
 import Understand from './pages/Phases/Understand/Understand'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
           < Route path='/' element={<Home />} />
           < Route path='/favorite' element={<Favorite />} />
           < Route path='/search' element={<Search />} />
+          < Route path='/chat' element={<Chat />} />
           < Route path='/understand' element={<Understand />} />
         </Routes>
       </div>
