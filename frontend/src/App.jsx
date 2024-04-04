@@ -7,6 +7,7 @@ import Search from './pages/Search/Search'
 import Footer from './components/Footer/Footer'
 import Chat from './pages/Chat/Chat'
 import Understand from './pages/Phases/Understand/Understand'
+import Observe from './pages/Phases/Observe/Observe'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           < Route path='/search' element={<Search />} />
           < Route path='/chat' element={<Chat />} />
           < Route path='/understand' element={<Understand />} />
+          < Route path='/observe' element={<Observe />} />
         </Routes>
       </div>
       <Footer />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import {assets} from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -15,14 +16,13 @@ const Navbar = () => {
         </ul>
         
         <div className="navbar-right">
-            <img src={assets.search_icon} alt="" className='search' />
-            <div className="navbar-search-icon">
-                <img src={assets.favorite_icon} alt="" className='favorite' />
+            <div className="navbar-favorite-icon">
+            <Link to="/favorite"><img src={assets.favorite_icon} alt="" className='favorite' /></Link>
             </div>
             <button>войти</button>
         </div>
     </div>
-  )
+  ) 
 }
 
 export default Navbar

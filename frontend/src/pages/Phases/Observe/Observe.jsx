@@ -1,10 +1,9 @@
-
 import React, { useContext } from 'react'
 import { assets } from '../../../assets/assets'
 import { Context } from '../../../context/Context'
-import './Understand.css'
+import "./Observe.css"
 
-const Understand = () => {
+const Observe = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context)
 
     return (
@@ -51,5 +50,5 @@ const Understand = () => {
     )
 }
 
-export default Understand
+export default Observe
 

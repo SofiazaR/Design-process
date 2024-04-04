@@ -48,13 +48,10 @@
     cursor: pointer;
 }
 
-.navbar-search-icon{
+.navbar-favorite-icon{
     position: relative;
 }
 
-.navbar .search{
-    width: 24px;
-}
 
 .navbar .favorite{
     width: 24px;

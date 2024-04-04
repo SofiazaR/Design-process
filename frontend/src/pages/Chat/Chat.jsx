@@ -2,7 +2,7 @@
 import React, { useContext } from 'react'
 import { assets } from '../../assets/assets'
 import { Context } from '../../context/Context'
-import './Chat.css'
+import "./Chat.css"
 
 const Chat = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context)
@@ -17,24 +17,6 @@ const Chat = () => {
                         <div className="greet">
                             <p><span>Привет</span></p>
                             <p>Как я могу помочь тебе сегодня</p>
-                        </div>
-                        <div className="cards">
-                            <div className="card">
-                                <p>Опиши портрет пользователя</p>
-                                <img src={assets.compass_icon} alt="" />
-                            </div>
-                            <div className="card">
-                                <p>Что такое A/B тестирование</p>
-                                <img src={assets.bulb_icon} alt="" />
-                            </div>
-                            <div className="card">
-                                <p>Text</p>
-                                <img src={assets.message_icon} alt="" />
-                            </div>
-                            <div className="card">
-                                <p>Text</p>
-                                <img src={assets.code_icon} alt="" />
-                            </div>
                         </div>
                     </>
                     : <div className="result">
@@ -59,15 +41,13 @@ const Chat = () => {
 
                 <div className="main-bottom">
                     <div className="search-box">
-                        <input onChange={(e) => setInput(e.target.value)} value={input} type='text' placeholder='Enter a prompt here' />
+                        <input onChange={(e) => setInput(e.target.value)} value={input} type='text' placeholder='Введите запрос тут' />
                         <div>
-                            <img src={assets.gallery_icon} alt="" />
-                            <img src={assets.mic_icon} alt="" />
                             {input ? <img onClick={() => onSent()} src={assets.send_icon} alt="" /> : null}
                         </div>
                     </div>
                     <p className="bottom-info">
-                        display text
+                        Информация может быть не точной, в том числе о людях, поэтому перепроверяйте ответы.
                     </p>
                 </div>
             </div>

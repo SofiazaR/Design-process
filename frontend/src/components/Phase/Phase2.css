@@ -21,6 +21,7 @@ line-height: normal;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
     transition: all 400ms;
+    max-width: 900px;
 }
 
 .phase-container:hover .star {
