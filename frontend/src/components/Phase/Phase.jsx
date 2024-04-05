@@ -6,6 +6,13 @@ import { Link } from 'react-router-dom'
 
 const Phase = ({phase,SetPhase}) => {
     
+    const [extended, setExtended] = useState(false)
+    const { onSent, prevPrompts, setRecentPrompt, newChat } = useContext(Context)
+
+    const loadPromt = async (prompt) => {
+        setRecentPrompt(prompt)
+        await onSent(prompt)
+    }
 
     return (
         <div className='design-phase'>
@@ -31,19 +38,19 @@ const Phase = ({phase,SetPhase}) => {
                     <button class="image-button"><Link to="/observe"><img src={assets.star_2} alt="" className='star-img' /></Link></button>
                     </div>
                     <div className='star star-3'>
-                    <button class="image-button"><Link to="/observe"><img src={assets.star_3} alt="" className='star-img' /></Link></button>
+                    <button class="image-button"><Link to="/define"><img src={assets.star_3} alt="" className='star-img' /></Link></button>
                     </div>
                     <div className='star star-4'>
-                    <button class="image-button"><Link to="/observe"><img src={assets.star_4} alt="" className='star-img' /></Link></button>
+                    {extended ? <button class="image-button"><Link to="/ideate"> <img src={assets.star_4} alt="" className='star-img' /> </Link></button>: null}
                     </div>
                     <div className='star star-5'>
-                    <button class="image-button"><Link to="/observe"><img src={assets.star_5} alt="" className='star-img' /></Link></button>
+                    <button class="image-button"><Link to="/develop"><img src={assets.star_5} alt="" className='star-img' /></Link></button>
                     </div>
                     <div className='star star-6'>
-                    <button class="image-button"><Link to="/observe"><img src={assets.star_6} alt="" className='star-img' /></Link></button>
+                    <button class="image-button"><Link to="/test"><img src={assets.star_6} alt="" className='star-img' /></Link></button>
                     </div>
                     <div className='star star-7'>
-                    <button class="image-button"><Link to="/observe"><img src={assets.star_7} alt="" className='star-img' /></Link></button>
+                    <button class="image-button"><Link to="/reflect"><img src={assets.star_7} alt="" className='star-img' /></Link></button>
                     </div>
                     
                 

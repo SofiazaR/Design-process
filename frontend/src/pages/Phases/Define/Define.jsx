@@ -1,22 +1,31 @@
 
 import React, { useContext } from 'react'
-import { assets } from '../../assets/assets'
-import { Context } from '../../context/Context'
-import "./Favorite.css"
+import { assets } from '../../../assets/assets'
+import { Context } from '../../../context/Context'
+import './Define.css'
 
-const Chat = () => {
+const Define = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context)
 
     return (
         <div className='main'>
-            
             <div className="main-container">
 
                 {!showResult
                     ? <>
-                        <div className="greet">
-                            <p><span>Привет</span></p>
-                            <p>Как я могу помочь тебе сегодня</p>
+                        <div className="cards">
+                            <div className="card" onClick={() => onSent("Создай портрет пользователя")}>
+                                <p>Создай портрет пользователя</p>
+                            </div>
+                            <div className="card" onClick={() => onSent("Построй медель крючка")}>
+                                <p>Построй медель крючка</p>
+                            </div>
+                            <div className="card" onClick={() => onSent("Распиши по методологии JTBD")}>
+                                <p>Распиши по методологии JTBD</p>
+                            </div>
+                            <div className="card" onClick={() => onSent("Смоделируй будущее пользователя")}>
+                                <p>Смоделируй будущее пользователя</p>
+                            </div>
                         </div>
                     </>
                     : <div className="result">
@@ -37,23 +46,10 @@ const Chat = () => {
                         </div>
                     </div>
                 }
-
-
-                <div className="main-bottom">
-                    <div className="search-box">
-                        <input onChange={(e) => setInput(e.target.value)} value={input} type='text' placeholder='Введите запрос тут' />
-                        <div>
-                            {input ? <img onClick={() => onSent()} src={assets.send_icon} alt="" /> : null}
-                        </div>
-                    </div>
-                    <p className="bottom-info">
-                        Информация может быть не точной, в том числе о людях, поэтому перепроверяйте ответы.
-                    </p>
-                </div>
             </div>
         </div>
     )
 }
 
-export default Chat
+export default Define
 

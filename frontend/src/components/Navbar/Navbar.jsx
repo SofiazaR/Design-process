@@ -10,17 +10,11 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <ul className="navbar-menu">
-        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>главная</li>
-        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>чат</li>
-        <li onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>о сайте</li>
+        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}><Link to="/">главная</Link></li>
+        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}><Link to="/chat">чат</Link></li>
         </ul>
         
-        <div className="navbar-right">
-            <div className="navbar-favorite-icon">
-            <Link to="/favorite"><img src={assets.favorite_icon} alt="" className='favorite' /></Link>
-            </div>
-            <button>войти</button>
-        </div>
+    
     </div>
   ) 
 }

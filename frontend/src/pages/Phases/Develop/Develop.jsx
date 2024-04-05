@@ -2,9 +2,9 @@
 import React, { useContext } from 'react'
 import { assets } from '../../../assets/assets'
 import { Context } from '../../../context/Context'
-import './Test.css'
+import './Develop.css'
 
-const Test = () => {
+const Develop = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context)
 
     return (
@@ -51,5 +51,5 @@ const Test = () => {
     )
 }
 
-export default Test
+export default Develop
 
