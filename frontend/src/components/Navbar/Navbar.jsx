@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import {assets} from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -13,8 +12,6 @@ const Navbar = () => {
         <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}><Link to="/">главная</Link></li>
         <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}><Link to="/chat">чат</Link></li>
         </ul>
-        
-    
     </div>
   ) 
 }
