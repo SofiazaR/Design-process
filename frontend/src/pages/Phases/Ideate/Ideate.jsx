@@ -14,17 +14,23 @@ const Ideate = () => {
                 {!showResult
                     ? <>
                         <div className="cards">
-                            <div className="card" onClick={() => onSent("Создай портрет пользователя")}>
-                                <p>Создай портрет пользователя</p>
+                            <div className="card" onClick={() => onSent("Мозговой штурм")}>
+                                <p>Мозговой штурм</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Построй медель крючка")}>
-                                <p>Построй медель крючка</p>
+                            <div className="card" onClick={() => onSent("Глубина идей")}>
+                                <p>Глубина идей</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Распиши по методологии JTBD")}>
-                                <p>Распиши по методологии JTBD</p>
+                            <div className="card" onClick={() => onSent("Техники творческого поиска")}>
+                                <p>Техники творческого поиска</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Смоделируй будущее пользователя")}>
-                                <p>Смоделируй будущее пользователя</p>
+                            <div className="card" onClick={() => onSent("Методика Scamper")}>
+                                <p>Методика Scamper</p>
+                            </div>
+                            <div className="card" onClick={() => onSent("Структурирование, группировка и документирование идей")}>
+                                <p>Структурирование, группировка и документирование идей</p>
+                            </div>
+                            <div className="card" onClick={() => onSent("Информационной лист идеи")}>
+                                <p>Информационной лист идеи</p>
                             </div>
                         </div>
                     </>

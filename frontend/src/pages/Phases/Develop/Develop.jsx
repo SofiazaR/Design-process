@@ -14,17 +14,17 @@ const Develop = () => {
                 {!showResult
                     ? <>
                         <div className="cards">
-                            <div className="card" onClick={() => onSent("Создай портрет пользователя")}>
-                                <p>Создай портрет пользователя</p>
+                            <div className="card" onClick={() => onSent("Разработка прототипов")}>
+                                <p>Разработка прототипов</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Построй медель крючка")}>
-                                <p>Построй медель крючка</p>
+                            <div className="card" onClick={() => onSent("Различные виды прототипов")}>
+                                <p>Различные виды прототипов</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Распиши по методологии JTBD")}>
-                                <p>Распиши по методологии JTBD</p>
+                            <div className="card" onClick={() => onSent("Принцип коробки и полок")}>
+                                <p>Принцип коробки и полок</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Смоделируй будущее пользователя")}>
-                                <p>Смоделируй будущее пользователя</p>
+                            <div className="card" onClick={() => onSent("Семинар по созданию прототипов")}>
+                                <p>Семинар по созданию прототипов</p>
                             </div>
                         </div>
                     </>

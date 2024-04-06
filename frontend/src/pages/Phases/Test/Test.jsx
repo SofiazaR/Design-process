@@ -14,17 +14,17 @@ const Test = () => {
                 {!showResult
                     ? <>
                         <div className="cards">
-                            <div className="card" onClick={() => onSent("Создай портрет пользователя")}>
-                                <p>Создай портрет пользователя</p>
+                            <div className="card" onClick={() => onSent("Процедура тестирования")}>
+                                <p>Процедура тестирования</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Построй медель крючка")}>
-                                <p>Построй медель крючка</p>
+                            <div className="card" onClick={() => onSent("Таблица обратной связи")}>
+                                <p>Таблица обратной связи</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Распиши по методологии JTBD")}>
-                                <p>Распиши по методологии JTBD</p>
+                            <div className="card" onClick={() => onSent("A/B-тестирование")}>
+                                <p>A/B-тестирование</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Смоделируй будущее пользователя")}>
-                                <p>Смоделируй будущее пользователя</p>
+                            <div className="card" onClick={() => onSent("Таблица эксперимента")}>
+                                <p>Таблица эксперимента</p>
                             </div>
                         </div>
                     </>

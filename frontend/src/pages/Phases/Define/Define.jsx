@@ -14,17 +14,14 @@ const Define = () => {
                 {!showResult
                     ? <>
                         <div className="cards">
-                            <div className="card" onClick={() => onSent("Создай портрет пользователя")}>
-                                <p>Создай портрет пользователя</p>
+                            <div className="card" onClick={() => onSent("Взгляд под углом 360 градусов")}>
+                                <p>Взгляд под углом 360 градусов</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Построй медель крючка")}>
-                                <p>Построй медель крючка</p>
+                            <div className="card" onClick={() => onSent("Инструменты 9 окон и карта-ромашка")}>
+                                <p>Инструменты 9 окон и карта-ромашка</p>
                             </div>
-                            <div className="card" onClick={() => onSent("Распиши по методологии JTBD")}>
-                                <p>Распиши по методологии JTBD</p>
-                            </div>
-                            <div className="card" onClick={() => onSent("Смоделируй будущее пользователя")}>
-                                <p>Смоделируй будущее пользователя</p>
+                            <div className="card" onClick={() => onSent("Формулировка точки зрения, например вопрос “КАК МЫ МОЖЕМ...”")}>
+                                <p>Формулировка точки зрения, например вопрос “КАК МЫ МОЖЕМ...”</p>
                             </div>
                         </div>
                     </>
